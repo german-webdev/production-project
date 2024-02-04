@@ -1,12 +1,10 @@
-import { FC, Suspense } from 'react'
-// import { Counter } from './component/Counter';
-import { Link, Route, Routes } from 'react-router-dom';
+import { FC } from 'react'
 
 import './styles/index.scss';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { AboutPage } from 'pages/AboutPage';
-import { MainPage } from 'pages/MainPage';
+import AppRouter from './providers/Router/ui/AppRouter';
+import { Navbar } from 'widgets/Navbar';
 
 
 
@@ -18,16 +16,9 @@ export const App: FC = () => {
 
   return (
     <div className={appClasses}>
+      <Navbar />
+      <AppRouter />
       <button onClick={toggleTheme}>TOGGLE THEME</button>
-      <Link to={'/'}>Главная</Link>
-      <Link to={'/about'}>О сайте</Link>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path={'/about'} element={<AboutPage />}/>
-          <Route path={'/'} element={<MainPage />}/>
-        </Routes>
-      </Suspense>
-      
     </div>
   )
 };
