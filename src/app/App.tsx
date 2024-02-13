@@ -1,24 +1,28 @@
-import { FC } from 'react'
-
+import { FC, Suspense, useTransition } from 'react';
 import './styles/index.scss';
-import { useTheme } from 'app/providers/ThemeProvider';
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames } from "shared/lib/classNames/classNames";
+import { useTheme } from "app/providers/ThemeProvider";
+import { Navbar } from "widgets/Navbar";
+import { Sidebar } from "widgets/Sidebar";
 import AppRouter from './providers/Router/ui/AppRouter';
-import { Navbar } from 'widgets/Navbar';
-import { Sidebar } from 'widgets/Sidebar';
+import { useTranslation } from 'react-i18next';
 
-export const App: FC = () => {
-  const { theme } = useTheme();
 
-  const appClasses = classNames('app', {hovered: true, selected: true}, [theme])
 
-  return (
-    <div className={appClasses}>
-      <Navbar />
-      <div className='content-page'>
-        <Sidebar />
-        <AppRouter />
-      </div>
-    </div>
-  )
+const App: FC = () => {
+   const { theme } = useTheme();
+
+    return (
+        <div className={classNames('app', {}, [theme])}>
+            <Suspense fallback="">
+                <Navbar />
+                <div className="content-page">
+                    <Sidebar />
+                    <AppRouter />
+                </div>
+            </Suspense>
+        </div>
+    );
 };
+
+export default App;
