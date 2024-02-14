@@ -6,6 +6,7 @@ module.exports = {
     extends: [
         "standard-with-typescript",
         "plugin:react/recommended",
+        "plugin:i18next/recommended"
     ],
     parser: "@typescript-eslint/parser",
     parserOptions: {
@@ -16,7 +17,9 @@ module.exports = {
         sourceType: "module"
     },
     plugins: [
-        "react"
+        "react",
+        "@typescript-eslint",
+        "i18next"
     ],
     rules: {
         "semi": [2, "always"],
@@ -40,6 +43,7 @@ module.exports = {
         "@typescript-eslint/no-redeclare": 0,
         "@typescript-eslint/no-floating-promises": 0,
         "@typescript-eslint/naming-convention": 0,
+        "i18next/no-literal-string": ["error", { markupOnly: true }]
     },
     settings: {
         react: {
