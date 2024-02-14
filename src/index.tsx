@@ -5,7 +5,7 @@ import { ThemeProvider } from 'app/providers/ThemeProvider';
 
 import 'shared/config/i18n/i18n';
 
-const rootElement = document.getElementById('root') as HTMLElement;
+const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
