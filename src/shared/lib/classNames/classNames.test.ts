@@ -21,7 +21,7 @@ describe('classNames', () => {
     )).toBe(expected);
   });
 
-  test('with first, modifiers and additional classes', () => {
+  test('with modifiers and additional classes', () => {
     const expected = 'someClass class2 class3 modifier1 modifier2'
     expect(classNames(
       'someClass',

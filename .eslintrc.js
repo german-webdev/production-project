@@ -28,7 +28,10 @@ module.exports = {
         "@typescript-eslint/quotes": 2,
         "react/jsx-indent": [2, 2],
         "indent": [2, 2],
-        "react/jsx-filename-extension": [2, { extensions: ['.js', '.jsx', '.tsx'] }],
+        "react/jsx-filename-extension": [
+            2, 
+            { extensions: ['.js', '.jsx', '.tsx'] }
+        ],
         "import/no-unresolved": 0,
         "import/prefer-default-export": 0,
         "react/jsx-uses-react": 2,
@@ -43,7 +46,12 @@ module.exports = {
         "@typescript-eslint/no-redeclare": 0,
         "@typescript-eslint/no-floating-promises": 0,
         "@typescript-eslint/naming-convention": 0,
-        "i18next/no-literal-string": ["error", { markupOnly: true }],
+        "i18next/no-literal-string": [
+            "error", { markupOnly: true }
+        ],
+        "max-len": [
+            2, { "ignoreComments": true }
+        ],
     },
     settings: {
         react: {
