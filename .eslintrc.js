@@ -43,7 +43,7 @@ module.exports = {
         "@typescript-eslint/no-redeclare": 0,
         "@typescript-eslint/no-floating-promises": 0,
         "@typescript-eslint/naming-convention": 0,
-        "i18next/no-literal-string": ["error", { markupOnly: true }]
+        "i18next/no-literal-string": ["error", { markupOnly: true }],
     },
     settings: {
         react: {
