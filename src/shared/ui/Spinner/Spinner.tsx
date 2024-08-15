@@ -1,5 +1,5 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import styles from './Spinner.module.scss';
+import styles from './Spinner.module.scss'
 
 interface SpinnerProps {
   className?: string

@@ -5,10 +5,9 @@ declare module '*.scss' {
   export = scssClassNames;
 }
 
-declare module '*.css' {
-  const cssClassNames: IClassNames;
-  export = cssClassNames;
-}
+declare const styles: {
+  [key: string]: string;
+};
 
 declare module '*.png';
 declare module '*.jpg';

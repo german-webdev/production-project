@@ -17,8 +17,8 @@ export function buildPlugins ({ paths, isDev }: BuildOptions): webpack.WebpackPl
     new webpack.DefinePlugin({
       __IS_DEV__: JSON.stringify(isDev)
     }),
-    isDev && new ReactRefreshWebpackPlugin(),
-    isDev && new webpack.HotModuleReplacementPlugin(),
+    new ReactRefreshWebpackPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
     new BundleAnalyzerPlugin({
       openAnalyzer: false
     })
