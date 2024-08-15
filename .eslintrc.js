@@ -47,15 +47,30 @@ module.exports = {
         "@typescript-eslint/no-floating-promises": 0,
         "@typescript-eslint/naming-convention": 0,
         "i18next/no-literal-string": [
-            "error", { markupOnly: true }
+            "error", 
+            { 
+                markupOnly: true,
+                ignoreAttribute: ["data-testid"],
+            },
         ],
         "max-len": [
-            2, { "ignoreComments": true }
+            "error", { "ignoreComments": true, code: 100 }
         ],
     },
     settings: {
         react: {
             version: "detect"
         }
-    }
+    },
+    globals: {
+        __IS_DEV__: true,
+    },
+    overrides: [
+        {
+            files: ["**/src/**/*.test.{ts,tsx}"],
+            rules: {
+                "i18next/no-literal-string": "off",
+            }
+        }
+    ] 
 }
