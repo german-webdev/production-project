@@ -7,7 +7,6 @@ interface PageLoader {
 }
 
 export const PageLoader = ({ className }: PageLoader) => {
-
   return (
     <div className={classNames(styles.pageLoader, {}, [className])}>
       <Spinner />

@@ -5,9 +5,7 @@ declare module '*.scss' {
   export = scssClassNames;
 }
 
-declare const styles: {
-  [key: string]: string;
-};
+declare const styles: Record<string, string>;
 
 declare module '*.png';
 declare module '*.jpg';

@@ -26,6 +26,7 @@ module.exports = {
         "@typescript-eslint/semi": [2, "always"],
         "quotes": [2, "single"],
         "@typescript-eslint/quotes": 2,
+        "@typescript-eslint/ban-ts-comment": "off",
         "react/jsx-indent": [2, 2],
         "indent": [2, 2],
         "react/jsx-filename-extension": [
@@ -50,11 +51,11 @@ module.exports = {
             "error", 
             { 
                 markupOnly: true,
-                ignoreAttribute: ["data-testid"],
+                ignoreAttribute: ["data-testid", "to"],
             },
         ],
         "max-len": [
-            "error", { "ignoreComments": true, code: 100 }
+            "error", { "ignoreComments": true, "code": 120 }
         ],
     },
     settings: {
@@ -67,10 +68,11 @@ module.exports = {
     },
     overrides: [
         {
-            files: ["**/src/**/*.test.{ts,tsx}"],
+            files: ["**/src/**/*.test.{ts,tsx}", "**/src/**/ErrorBoundary.tsx"],
             rules: {
                 "i18next/no-literal-string": "off",
+                "n/handle-callback-err": "off",
             }
         }
-    ] 
+    ],
 }

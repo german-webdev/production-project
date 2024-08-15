@@ -1,5 +1,5 @@
 type Mods = Record<string, boolean | string>;
-type Additional = (string | undefined)[]
+type Additional = Array<string | undefined>;
 
 export function classNames (cls: string, mods: Mods = {}, additional: Additional = []): string {
   return [
