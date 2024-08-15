@@ -4,12 +4,13 @@ import { type ButtonHTMLAttributes, type PropsWithChildren, type ReactNode } fro
 
 export enum ThemeButton {
   CLEAR = 'clear',
+  OUTLINE = 'outline',
 }
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  className?: string
-  children: ReactNode
-  theme?: ThemeButton
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  className?: string;
+  children: ReactNode;
+  theme?: ThemeButton;
 }
 
 export const Button = (props: PropsWithChildren<ButtonProps>) => {
