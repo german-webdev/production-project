@@ -3,6 +3,7 @@ import styles from './Button.module.scss';
 import { type ButtonHTMLAttributes, type PropsWithChildren, type ReactNode } from 'react';
 
 export enum ThemeButton {
+  PRIMARY = 'primary',
   CLEAR = 'clear',
   OUTLINE = 'outline',
 }

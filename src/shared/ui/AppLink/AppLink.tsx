@@ -6,12 +6,13 @@ import { type ReactNode } from 'react';
 export enum AppLinkTheme {
   PRIMARY = 'primary',
   SECONDARY = 'secondary',
+  RED = 'red',
 }
 
 interface AppLinkProps extends LinkProps {
   className?: string
   theme?: AppLinkTheme
-  children: ReactNode
+  children?: ReactNode
 }
 
 export const AppLink = (props: AppLinkProps) => {

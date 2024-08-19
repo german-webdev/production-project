@@ -1,5 +1,6 @@
+import { Decorator } from '@storybook/react';
 import 'app/styles/index.scss';
-import type { Decorator } from '@storybook/react';
 
-// Декоратор принимает функцию, возвращающую компонент истории
-export const StyleDecorator: Decorator = (Story) => <Story />;
+const StyleDecorator: Decorator = (Story) => <Story />;
+
+export { StyleDecorator };
