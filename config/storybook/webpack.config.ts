@@ -17,7 +17,9 @@ export default ({ config }: { config: webpack.Configuration }) => {
   config.module.rules.push(buildCssLoader(true));
   config.module.rules.push(buildBabelLoader());
   config.module.rules = config.module.rules.map((rule: RuleSetRule) => {
-    if ((rule.test as string).includes('svg')) {
+    if (rule.test instanceof RegExp && rule.test.test('.svg')) {
+      return { ...rule, exclude: /\.svg$/i };
+    } else if (typeof rule.test === 'string' && rule.test.includes('svg')) {
       return { ...rule, exclude: /\.svg$/i };
     }
     return rule;
