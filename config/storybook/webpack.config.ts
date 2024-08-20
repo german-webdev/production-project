@@ -1,5 +1,5 @@
 import { type RuleSetRule } from 'webpack';
-import webpack from 'webpack';
+import type webpack from 'webpack';
 import path from 'path';
 import { type BuildPaths } from '../build/types/config';
 import { buildBabelLoader } from '../build/loaders/buildBabelLoader';
