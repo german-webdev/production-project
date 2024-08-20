@@ -25,18 +25,18 @@ export default {
   moduleDirectories: [
     'node_modules'
   ],
+  rootDir: '../../',
   modulePaths: [
     '<rootDir>src'
   ],
   testMatch: [
     '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'
   ],
-  rootDir: '../../',
   setupFilesAfterEnv: [
     '<rootDir>config/jest/setupTests.ts'
   ],
   moduleNameMapper: {
     '\\.s?css$': 'identity-obj-proxy',
-    '\\.svg$': '<rootDir>config/jest/JestEmptyComponent.tsx'
+    '\\.svg$': path.resolve(__dirname, 'jestEmptyComponent.tsx')
   }
 };
