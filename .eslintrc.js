@@ -58,6 +58,7 @@ module.exports = {
         "max-len": [
             "error", { "ignoreComments": true, "code": 120 }
         ],
+        "react/display-name": "off"
     },
     settings: {
         react: {
@@ -69,7 +70,11 @@ module.exports = {
     },
     overrides: [
         {
-            files: ["**/src/**/*.test.{ts,tsx}", "**/src/**/ErrorBoundary.tsx"],
+            files: [
+                "**/src/**/*.test.{ts,tsx}",
+                "**/src/**/ErrorBoundary.tsx",
+                "**/src/**/BugButton.tsx",
+            ],
             rules: {
                 "i18next/no-literal-string": "off",
                 "n/handle-callback-err": "off",

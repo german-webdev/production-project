@@ -7,9 +7,9 @@ const meta = {
   title: 'widget/AboutPage',
   component: AboutPage,
   parameters: {
-    layout: 'centered',
+    layout: 'centered'
   },
-  tags: ['autodocs'],
+  tags: ['autodocs']
 
 } satisfies Meta<typeof AboutPage>;
 
@@ -17,11 +17,11 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Light: Story = {
-  args: {},
+  args: {}
 };
 
 export const Dark: Story = {
-  args: {},
+  args: {}
 };
 
 Dark.decorators = [ThemeDecorator(Theme.DARK)];

@@ -1,6 +1,5 @@
-import { StoryFn } from '@storybook/react';
-import { Theme } from 'app/providers/ThemeProvider';
-
+import { type StoryFn } from '@storybook/react';
+import { type Theme } from 'app/providers/ThemeProvider';
 
 const ThemeDecorator = (theme: Theme) => (Story: StoryFn) => {
   return (
@@ -8,6 +7,6 @@ const ThemeDecorator = (theme: Theme) => (Story: StoryFn) => {
       <Story />
     </div>
   );
-}
+};
 
 export { ThemeDecorator };

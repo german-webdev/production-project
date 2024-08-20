@@ -1,6 +1,5 @@
-import { Decorator } from '@storybook/react';
+import { type Decorator } from '@storybook/react';
 import { BrowserRouter } from 'react-router-dom';
-
 
 const RouterDecorator: Decorator = (Story) => {
   return (
@@ -8,6 +7,6 @@ const RouterDecorator: Decorator = (Story) => {
       <Story />
     </BrowserRouter>
   );
-}
+};
 
 export { RouterDecorator };

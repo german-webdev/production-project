@@ -9,9 +9,9 @@ export enum ThemeButton {
 }
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  className?: string;
-  children: ReactNode;
-  theme?: ThemeButton;
+  className?: string
+  children: ReactNode
+  theme?: ThemeButton
 }
 
 export const Button = (props: PropsWithChildren<ButtonProps>) => {

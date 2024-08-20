@@ -1,4 +1,4 @@
-export function buildBabelLoader() {
+export function buildBabelLoader () {
   return {
     test: /\.(js|jsx|tsx)$/,
     exclude: /node_modules/,
@@ -6,14 +6,14 @@ export function buildBabelLoader() {
       loader: 'babel-loader',
       options: {
         presets: [
-          '@babel/preset-env', 
-          '@babel/preset-typescript',  
+          '@babel/preset-env',
+          '@babel/preset-typescript',
           [
             '@babel/preset-react',
             {
-              runtime: 'automatic',
-            },
-          ],
+              runtime: 'automatic'
+            }
+          ]
         ],
         plugins: [
           [
