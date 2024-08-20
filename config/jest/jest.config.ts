@@ -37,6 +37,6 @@ export default {
   ],
   moduleNameMapper: {
     '\\.s?css$': 'identity-obj-proxy',
-    '\\.svg$': '<rootDir>/config/jest/JestEmptyComponent.tsx'
+    '\\.svg$': path.resolve(__dirname, 'JestEmptyComponent.tsx')
   }
 };
