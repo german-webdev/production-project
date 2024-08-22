@@ -12,7 +12,7 @@
     // Компилятор будет обрабатывать не только TS файлы, но и JS файлы
     "allowJs": true,
     "moduleResolution": "node",
-    "forceConsistentCasingInFileNames": true,
+    // "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     // Для абсолютного импорта
     "baseUrl": ".",
@@ -44,10 +44,10 @@
   },
   "include": [
     "./config/jest/setupTests.ts",
-    "src/**/*",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
     "webpack.config.ts",
-    "jest.config.ts",
-    "config/**/*.ts",
-    "config/**/*.tsx",
+    "./config/**/*.ts",
+    "./config/**/*.tsx"
   ]
 }
