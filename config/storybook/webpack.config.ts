@@ -1,5 +1,5 @@
 import { type RuleSetRule } from 'webpack';
-import type webpack from 'webpack';
+import webpack from 'webpack';
 import path from 'path';
 import { type BuildPaths } from '../build/types/config';
 import { buildBabelLoader } from '../build/loaders/buildBabelLoader';
@@ -29,6 +29,13 @@ export default ({ config }: { config: webpack.Configuration }) => {
     issuer: /\.[jt]sx?$/,
     use: ['@svgr/webpack']
   });
+
+  config.plugins = [
+    ...(config.plugins || []),
+    new webpack.DefinePlugin({
+      __IS_DEV__: JSON.stringify(true)
+    })
+  ];
 
   return config;
 };
