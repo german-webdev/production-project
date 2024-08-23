@@ -1,6 +1,9 @@
 {
   "": "",
+  "decrement": "decrement",
+  "increment": "increment",
   "toggle": "toggle",
+  "value": "value",
   "В": "В",
   "Войти": "Войти",
   "Главная": "Главная",
