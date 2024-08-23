@@ -1,5 +1,4 @@
-import { type FC, Suspense } from 'react';
-import './styles/index.scss';
+import { type FC, Suspense, useState } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { Navbar } from 'widgets/Navbar';
