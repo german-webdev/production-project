@@ -15,7 +15,7 @@ export const Navbar = ({ className }: NavbarProps) => {
 
   const onToggleModal = useCallback(() => {
     setIsAuthModal((prev) => !prev);
-  }, [])
+  }, []);
 
   return (
     <div className={classNames(styles.navbar, {}, [className])}>
@@ -26,8 +26,8 @@ export const Navbar = ({ className }: NavbarProps) => {
       >
         {t('Войти')}
       </Button>
+      {/* eslint-disable-next-line i18next/no-literal-string */}
       <Modal isOpen={isAuthModal} onClose={() => { setIsAuthModal(false); }}>
-        {/* eslint-disable-next-line */}
         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         Deserunt quisquam numquam fugit tempore illo neque eaque,
         dolor distinctio voluptas iste reprehenderit vel pariatur omnis alias exercitationem et at repudiandae! Rem.

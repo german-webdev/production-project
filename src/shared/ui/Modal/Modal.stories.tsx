@@ -9,7 +9,7 @@ const meta = {
   parameters: {
     layout: 'centered'
   },
-  tags: ['autodocs'],
+  tags: ['autodocs']
 
 } satisfies Meta<typeof Modal>;
 
@@ -19,7 +19,7 @@ type Story = StoryObj<typeof meta>;
 export const Light: Story = {
   args: {
     isOpen: true,
-    children: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt quisquam numquam fugit tempore illo neque eaque, dolor distinctio voluptas iste reprehenderit vel pariatur omnis alias exercitationem et at repudiandae! Rem.',
+    children: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt quisquam numquam fugit tempore illo neque eaque, dolor distinctio voluptas iste reprehenderit vel pariatur omnis alias exercitationem et at repudiandae! Rem.'
   }
 };
 
@@ -28,7 +28,7 @@ Light.decorators = [ThemeDecorator(Theme.LIGHT)];
 export const Dark: Story = {
   args: {
     isOpen: true,
-    children: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt quisquam numquam fugit tempore illo neque eaque, dolor distinctio voluptas iste reprehenderit vel pariatur omnis alias exercitationem et at repudiandae! Rem.',
+    children: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt quisquam numquam fugit tempore illo neque eaque, dolor distinctio voluptas iste reprehenderit vel pariatur omnis alias exercitationem et at repudiandae! Rem.'
   }
 };
 
