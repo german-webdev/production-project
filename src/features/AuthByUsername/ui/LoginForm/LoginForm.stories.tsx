@@ -24,7 +24,7 @@ Primary.decorators = [StoreDecorator({
     username: 'admin',
     password: '123'
   }
-})]
+})];
 
 export const WithError: Story = {
   args: {}
@@ -36,7 +36,7 @@ WithError.decorators = [StoreDecorator({
     password: '123',
     error: 'Вы ввели неверный логин или пароль'
   }
-})]
+})];
 
 export const Loading: Story = {
   args: {}
@@ -44,4 +44,4 @@ export const Loading: Story = {
 
 Loading.decorators = [StoreDecorator({
   loginForm: { isLoading: true }
-})]
+})];

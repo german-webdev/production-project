@@ -14,7 +14,7 @@ export default ({ config }: { config: webpack.Configuration }) => {
 
   config.resolve.alias = {
     ...(config.resolve.alias || {}),
-    entities: path.resolve(paths.src, 'entities'),
+    entities: path.resolve(paths.src, 'entities')
   };
 
   config.resolve.modules.push(paths.src);

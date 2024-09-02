@@ -40,7 +40,6 @@ export const Navbar = ({ className }: NavbarProps) => {
         </Button>
       </div>
     );
-
   }
 
   return (

@@ -33,4 +33,4 @@ export const AuthNavbar: Story = {
 
 AuthNavbar.decorators = [StoreDecorator({
   user: { authData: {} }
-})]
+})];
