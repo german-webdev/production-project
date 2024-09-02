@@ -15,7 +15,8 @@
     "test:unit": "jest --config ./config/jest/jest.config.ts",
     "storybook": "storybook dev -p 6006 -c ./config/storybook/",
     "storybook:build": "storybook build -c ./config/storybook/",
-    "chromatic": "npx chromatic --project-token=chpt_efc549fbe81218e --build-script-name=storybook:build --auto-accept-changes"
+    "chromatic": "npx chromatic --project-token=chpt_efc549fbe81218e --build-script-name=storybook:build --auto-accept-changes",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -64,6 +65,7 @@
     "eslint-plugin-storybook": "^0.8.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.6.0",
+    "husky": "^9.1.5",
     "identity-obj-proxy": "^3.0.0",
     "jest-environment-jsdom": "^29.7.0",
     "json-server": "^0.17.4",
