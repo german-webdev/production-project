@@ -19,7 +19,7 @@ const preview: Preview = {
     StyleDecorator,
     ThemeDecorator(Theme.LIGHT),
     RouterDecorator,
-    StoreDecorator({}),
+    StoreDecorator({})
   ]
 };
 
