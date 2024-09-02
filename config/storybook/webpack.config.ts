@@ -12,6 +12,11 @@ export default ({ config }: { config: webpack.Configuration }) => {
     src: path.resolve(__dirname, '..', '..', 'src')
   };
 
+  config.resolve.alias = {
+    ...(config.resolve.alias || {}),
+    entities: path.resolve(paths.src, 'entities'),
+  };
+
   config.resolve.modules.push(paths.src);
   config.resolve.extensions.push('.ts', '.tsx');
   config.module.rules.push(buildCssLoader(true));

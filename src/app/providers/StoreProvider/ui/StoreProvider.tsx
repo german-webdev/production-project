@@ -1,7 +1,7 @@
 import { type ReactNode } from 'react';
 import { Provider } from 'react-redux';
 import { createReduxStore } from '../config/store';
-import { type StateSchema } from '../config/StateShema';
+import { type StateSchema } from '../config/StateSchema';
 import { type DeepPartial } from 'app/types/DeepPartial';
 
 interface Props {
