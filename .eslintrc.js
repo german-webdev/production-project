@@ -77,11 +77,15 @@ module.exports = {
                 "**/src/**/*.{test,stories}.{ts,tsx}",
                 "**/src/**/ErrorBoundary.tsx",
                 "**/src/**/BugButton.tsx",
+                "**/src/**/reducerManager.ts",
+                "**/src/**/DynamicModuleLoader.tsx"
             ],
             rules: {
                 "i18next/no-literal-string": "off",
                 "n/handle-callback-err": "off",
-                "max-len": "off"
+                "max-len": "off",
+                "@typescript-eslint/no-dynamic-delete": "off",
+                "react-hooks/exhaustive-deps": "off"
             }
         }
     ],
