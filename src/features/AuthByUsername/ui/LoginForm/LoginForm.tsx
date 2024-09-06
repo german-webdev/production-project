@@ -10,10 +10,10 @@ import { loginActions, loginReducer } from '../../model/slice/loginSlice';
 import { loginByUsername } from '../../model/services/loginByUsername/loginByUsername';
 import { type AppDispatch } from 'app/providers/StoreProvider/config/store';
 import { type ReduxStoreWithManager } from 'app/providers/StoreProvider';
-import { getLoginUsername } from '../../model/selectors/getLoginUsername';
-import { getLoginError } from '../../model/selectors/getLoginError';
-import { getLoginIsLoading } from '../../model/selectors/getLoginIsLoading';
-import { getLoginPassword } from '../../model/selectors/getLoginPassword';
+import { getLoginUsername } from '../../model/selectors/getLoginUsername/getLoginUsername';
+import { getLoginError } from '../../model/selectors/getLoginError/getLoginError';
+import { getLoginIsLoading } from '../../model/selectors/getLoginIsLoading/getLoginIsLoading';
+import { getLoginPassword } from '../../model/selectors/getLoginPassword/getLoginPassword';
 import DynamicModuleLoader, { type ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 
 export interface LoginFormProps {
