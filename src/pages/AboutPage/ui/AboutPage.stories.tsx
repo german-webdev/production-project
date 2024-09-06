@@ -4,7 +4,7 @@ import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 
 const meta = {
-  title: 'widget/AboutPage',
+  title: 'pages/AboutPage',
   component: AboutPage,
   parameters: {
     layout: 'centered'

@@ -4,5 +4,9 @@
     "src/shared/config/i18n"
   ],
 
-  "jest.jestCommandLine": ".\\node_modules\\.bin\\jest.cmd --config config/jest/jest.config.ts"
+  "jest.jestCommandLine": ".\\node_modules\\.bin\\jest.cmd --config config/jest/jest.config.ts",
+  "cSpell.words": [
+    "firstname",
+    "lastname"
+  ]
 }

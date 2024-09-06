@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import LoginForm from './LoginForm';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator';
+import { fn } from '@storybook/test';
 
 const meta = {
   title: 'features/LoginForm',
@@ -16,7 +17,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  args: {}
+  args: { onSuccess: fn() }
 };
 
 Primary.decorators = [StoreDecorator({
@@ -27,7 +28,7 @@ Primary.decorators = [StoreDecorator({
 })];
 
 export const WithError: Story = {
-  args: {}
+  args: { onSuccess: fn() }
 };
 
 WithError.decorators = [StoreDecorator({
@@ -39,7 +40,7 @@ WithError.decorators = [StoreDecorator({
 })];
 
 export const Loading: Story = {
-  args: {}
+  args: { onSuccess: fn() }
 };
 
 Loading.decorators = [StoreDecorator({

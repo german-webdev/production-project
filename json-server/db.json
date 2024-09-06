@@ -18,6 +18,13 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "firstname": "Иван",
+    "lastname": "Петров",
+    "age": 28,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Saint Petersburg",
+    "username": "admin",
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfF1tNyfdpPyKNQTlqYEM4T-jhdcuNY61mJQ&s"
   }
 }

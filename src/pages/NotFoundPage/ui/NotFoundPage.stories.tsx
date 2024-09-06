@@ -4,7 +4,7 @@ import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 
 const meta = {
-  title: 'widget/NotFoundPage',
+  title: 'pages/NotFoundPage',
   component: NotFoundPage,
   parameters: {
     layout: 'centered'

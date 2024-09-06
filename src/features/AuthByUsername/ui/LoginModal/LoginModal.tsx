@@ -2,7 +2,7 @@ import styles from './LoginModal.module.scss';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Modal } from 'shared/ui/Modal/Modal';
 import { Suspense } from 'react';
-import { LoginFormLazy } from '../LoginForm/LoginForm.async';
+import { LoginFormLazy } from '../LoginForm/LoginForm.lazy';
 import { Spinner } from 'shared/ui/Spinner/Spinner';
 
 interface LoginModalProps {
@@ -20,7 +20,7 @@ export const LoginModal = ({ className, isOpen, onClose }: LoginModalProps) => {
       lazy
     >
       <Suspense fallback={<Spinner />}>
-        <LoginFormLazy />
+        <LoginFormLazy onSuccess={onClose} />
       </Suspense>
     </Modal>
   );
