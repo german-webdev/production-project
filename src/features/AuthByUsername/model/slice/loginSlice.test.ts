@@ -1,14 +1,6 @@
 import { type DeepPartial } from 'app/types/DeepPartial';
 import { type LoginSchema } from '../types/loginSchema';
 import { loginActions, loginReducer } from './loginSlice';
-import { loginByUsername } from '../services/loginByUsername/loginByUsername';
-
-const state: DeepPartial<LoginSchema> = {
-  username: 'admin',
-  password: '123',
-  isLoading: false,
-  error: 'error'
-};
 
 describe('loginSlice', () => {
   it('test set username', () => {
